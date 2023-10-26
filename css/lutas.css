@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --verde-escuro: #16311a;
+    --verde: #4f6f1d;
+    --verde-claro: #d1c951;
+    --bege: #e6b656;
+    --marrom-claro: #af4301;
+    --marrom: #752e01;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 35px 75px;
+}
+
+.foto-noticia {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.foto-noticia img {
+    border-radius: 10px;
+    width: 680px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.caixa-titulo {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-pagina {
+    display: flex;
+    flex-wrap: wrap;
+    width: 680px;
+    margin-bottom: 35px;
+}
+
+.titulo-pagina h1 {
+    font-weight: 700;
+    font-size: 40px;
+    color: rgb(17, 19, 20);
+}
+
+.caixa-paragrafos {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.paragrafos {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    width: 680px;
+    margin-bottom: 35px;
+}
+
+.paragrafos p {
+    font-size: 20px;
+}
+
+.paragrafos ul {
+    font-size: 20px;
+    list-style-type: disc;
+    position: relative;
+    left: 25px;
+
+}
+
+.paragrafos ul li {
+    margin-bottom: 10px;
+}
+
+.paragrafos h2 {
+    margin-top: 50px;
+    font-size: 26px;
+}
+
+@media (max-width: 850px) {
+    .foto-noticia img {
+        border-radius: 10px;
+        width: auto;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 550px) {
+    .foto-noticia img {
+        width: 300px;
+        height: auto;
+    }
+}
+
+@media (max-width: 400px) {
+    .foto-noticia img {
+        width: 250px;
+        height: auto;
+    }
+}
+
+footer {
+    background-color: var(--verde);
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.titulo-rodape {
+    font-size: 28px;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.rodape {
+    display: flex;
+    color: white;
+}
+
+footer .rodape ul {
+    width: 25%;
+}
+
+.segunda-lista {
+    margin-top: 35px;
+}
+
+.terceira-lista {
+    margin-top: 35px;
+}
+
+.texto-rodape {
+    margin-right: 50px;
+}
+
+footer .rodape li {
+    margin: 10px 0;
+}
+
+footer .rodape a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 960px) {
+    footer .rodape {
+        flex-direction: column;
+    }
+
+    footer .rodape ul {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}

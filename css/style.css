@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --verde-escuro: #16311a;
+    --verde: #4f6f1d;
+    --verde-claro: #d1c951;
+    --bege: #e6b656;
+    --marrom-claro: #af4301;
+    --marrom: #752e01;
+}
+
+.container {
+    padding: 75px;
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+        'foto1 foto1 foto2 foto2'
+        'foto1 foto1 foto3 foto3';
+}
+
+.container .foto1,
+.foto2,
+.foto3 {
+    background-color: white;
+}
+
+.foto1 {
+    grid-area: foto1;
+    width: auto;
+    height: 90vh;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.texto-foto1 {
+    position: absolute;
+    top: 50%;
+    /* Posiciona o texto no meio verticalmente */
+    left: 50%;
+    /* Posiciona o texto no meio horizontalmente */
+    transform: translate(-50%, -50%);
+    /* Centraliza o texto no centro da imagem */
+    width: 90%;
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    padding: 10px;
+    /* Espaçamento interno do texto */
+    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    word-break: break-word;
+}
+
+.texto-foto {
+    position: absolute;
+    top: 90%;
+    /* Posiciona o texto no meio verticalmente */
+    left: 50%;
+    /* Posiciona o texto no meio horizontalmente */
+    transform: translate(-50%, -50%);
+    /* Centraliza o texto no centro da imagem */
+    width: 90%;
+    height: 70%;
+    color: white;
+    font-size: 33px;
+    font-weight: 700;
+    padding: 10px;
+    /* Espaçamento interno do texto */
+    padding-left: 20px;
+    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    word-break: break-word;
+}
+
+.texto-foto p {
+    text-shadow: 0 10px 30px rgba(0, 0, 0, 2);
+}
+
+.foto2 {
+    grid-area: foto2;
+    border-radius: 15px;
+    height: 44vh;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+}
+
+.foto3 {
+    grid-area: foto3;
+    border-radius: 15px;
+    height: 44vh;
+    overflow: hidden;
+    position: relative;
+}
+
+#foto1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .4s;
+}
+
+#foto1:hover {
+    -ms-transform: scale(1.1);
+    /* IE 9 */
+    -webkit-transform: scale(1.1);
+    /* Safari 3-8 */
+    transform: scale(1.1);
+    z-index: 9;
+}
+
+#foto2 {
+    max-height: 90vh;
+    transition: transform .4s;
+}
+
+#foto2:hover {
+    -ms-transform: scale(1.1);
+    /* IE 9 */
+    -webkit-transform: scale(1.1);
+    /* Safari 3-8 */
+    transform: scale(1.1);
+    z-index: 9;
+}
+
+#foto3 {
+    max-height: 90vh;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .4s;
+}
+
+#foto3:hover {
+    -ms-transform: scale(1.1);
+    /* IE 9 */
+    -webkit-transform: scale(1.1);
+    /* Safari 3-8 */
+    transform: scale(1.1);
+    z-index: 9;
+}
+
+@media (min-width: 1650px) {
+
+    .texto-foto {
+        font-size: 40px;
+    }
+
+    .texto-foto1 {
+        font-size: 50px;
+    }
+}
+
+footer {
+    background-color: var(--verde);
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.titulo-rodape {
+    font-size: 28px;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.rodape {
+    display: flex;
+    color: white;
+}
+
+footer .rodape ul {
+    width: 25%;
+}
+
+.segunda-lista {
+    margin-top: 35px;
+}
+
+.terceira-lista {
+    margin-top: 35px;
+}
+
+.texto-rodape {
+    margin-right: 50px;
+}
+
+footer .rodape li {
+    margin: 10px 0;
+}
+
+footer .rodape a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 960px) {
+    footer .rodape {
+        flex-direction: column;
+    }
+
+    footer .rodape ul {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+.noticias {
+    padding: 35px 75px;
+}
+
+.noticias a {
+    text-decoration: none;
+}
+
+.noticia1 {
+    display: grid;
+    grid-template-areas: 
+    'foto texto texto';
+    margin-bottom: 35px;
+}
+
+.noticia2 {
+    display: grid;
+    grid-template-areas: 
+    'foto texto texto';
+    margin-bottom: 35px;
+}
+
+.noticia3 {
+    display: grid;
+    grid-template-areas: 
+    'foto texto texto';
+    margin-bottom: 35px;
+}
+
+.foto-noticia {
+    grid-area: foto;
+    width: 350px;
+    height: 200px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.texto-noticia {
+    grid-area: texto;
+    font-weight: 600;
+    font-size: 28px;
+    color: var(--verde);
+    margin-left: 20px;
+}
+
+hr {
+    margin-bottom: 35px;
+    border: 1px solid var(--verde);
+}

@@ -1,0 +1,777 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --verde-escuro: #16311a;
+    --verde: #4f6f1d;
+    --verde-claro: #d1c951;
+    --bege: #e6b656;
+    --marrom-claro: #af4301;
+    --marrom: #752e01;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100vh;
+    color: white;
+}
+
+.card {
+    background-image: linear-gradient(#4f6f1d, #16311a);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow: hidden;
+    border-radius: 16px;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.card:hover {
+    background-image: linear-gradient(#374d14, #0d1d0f);
+}
+
+.card .img {
+    background-image: url(../img/creditos/homem-de-negocios.png);
+    background-position: center;
+    background-size: cover;
+    width: 360px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .8;
+    transition: all .5s;
+    z-index: 2;
+}
+
+.card .img2 {
+    background-image: url(../img/creditos/homem.png);
+    background-position: center;
+    background-size: cover;
+    width: 360px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .8;
+    transition: all .5s;
+    z-index: 2;
+}
+
+.card .img3 {
+    background-image: url(../img/creditos/homem\ \(1\).png);
+    background-position: center;
+    background-size: cover;
+    width: 360px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .8;
+    transition: all .5s;
+    z-index: 2;
+}
+
+.card .img4 {
+    background-image: url(../img/creditos/avatar-homem.png);
+    background-position: center;
+    background-size: cover;
+    width: 360px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .8;
+    transition: all .5s;
+    z-index: 2;
+}
+
+.card:hover .img, .img2, .img3, .img4 {
+    opacity: 1;
+    width: 440px;
+}
+
+.card .img, .img2, .img3, .img4 span {
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: black;
+}
+
+.card .content {
+    padding: 0 20px;
+    overflow: hidden;
+    height: 0;
+    transition: all .5s;
+    transform: translateY(30px);
+    opacity: 0;
+}
+
+.card:hover .content {
+    padding: 20px;
+    height: 260px;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.card .content p {
+    margin-bottom: 0;
+}
+
+.card .content .title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card .content .desc {
+    font-size: 18px;
+    font-weight: 100;
+    opacity: .7;
+}
+
+.desc {
+    margin-top: 15px;
+}
+
+.card .arrow {
+    padding: 5px;
+    transform: rotate(-180deg);
+    font-size: 28px;
+    transition: all .5s;
+}
+
+.card:hover .arrow {
+    transform: rotate(0);
+}
+
+
+
+
+
+@media (max-width: 1470px) {
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        min-height: 100vh;
+        color: white;
+    }
+    
+    .card {
+        background-image: linear-gradient(#4f6f1d, #16311a);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        overflow: hidden;
+        border-radius: 16px;
+        max-width: 260px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all .5s;
+    }
+    
+    .card:hover {
+        background-image: linear-gradient(#374d14, #0d1d0f);
+    }
+    
+    .card .img {
+        background-image: url(../img/creditos/homem-de-negocios.png);
+        background-position: center;
+        background-size: cover;
+        width: 260px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: .8;
+        transition: all .5s;
+        z-index: 2;
+    }
+
+    .card .img2 {
+        background-image: url(../img/creditos/homem.png);
+        background-position: center;
+        background-size: cover;
+        width: 260px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: .8;
+        transition: all .5s;
+        z-index: 2;
+    }
+
+    .card .img3 {
+        background-image: url(../img/creditos/homem\ \(1\).png);
+        background-position: center;
+        background-size: cover;
+        width: 260px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: .8;
+        transition: all .5s;
+        z-index: 2;
+    }
+
+    .card .img4{
+        background-image: url(../img/creditos/avatar-homem.png);
+        background-position: center;
+        background-size: cover;
+        width: 260px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: .8;
+        transition: all .5s;
+        z-index: 2;
+    }
+    
+    .card:hover .img, .img2, .img3, .img4 {
+        opacity: 1;
+        width: 340px;
+    }
+    
+    .card .img, .img2, .img3, .img4 span {
+        font-size: 24px;
+        font-style: italic;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+    
+    .card .content {
+        padding: 0 20px;
+        overflow: hidden;
+        height: 0;
+        transition: all .5s;
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    
+    .card:hover .content {
+        padding: 20px;
+        height: 280px;
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+    .card .content p {
+        margin-bottom: 0;
+    }
+    
+    .card .content .title {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    
+    .card .content .desc {
+        font-size: 16px;
+        font-weight: 100;
+        opacity: .7;
+    }
+    
+    .card .arrow {
+        padding: 5px;
+        transform: rotate(-180deg);
+        font-size: 28px;
+        transition: all .5s;
+    }
+    
+    .card:hover .arrow {
+        transform: rotate(0);
+    }
+}
+
+
+
+
+@media (max-width: 1070px) {
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        min-height: 100vh;
+        color: white;
+    }
+    
+    .card {
+        background-image: linear-gradient(#4f6f1d, #16311a);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        overflow: hidden;
+        border-radius: 16px;
+        max-width: 210px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all .5s;
+    }
+    
+    .card:hover {
+        background-image: linear-gradient(#374d14, #0d1d0f);
+    }
+    
+    .card .img {
+        background-image: url(../img/creditos/homem-de-negocios.png);
+        background-position: center;
+        background-size: cover;
+        width: 210px;
+        height: 130px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: .8;
+        transition: all .5s;
+        z-index: 2;
+    }
+
+    .card .img2 {
+        background-image: url(../img/creditos/homem.png);
+        background-position: center;
+        background-size: cover;
+        width: 210px;
+        height: 130px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: .8;
+        transition: all .5s;
+        z-index: 2;
+    }
+
+    .card .img3 {
+        background-image: url(../img/creditos/homem\ \(1\).png);
+        background-position: center;
+        background-size: cover;
+        width: 210px;
+        height: 130px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: .8;
+        transition: all .5s;
+        z-index: 2;
+    }
+
+    .card .img4 {
+        background-image: url(../img/creditos/avatar-homem.png);
+        background-position: center;
+        background-size: cover;
+        width: 210px;
+        height: 130px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: .8;
+        transition: all .5s;
+        z-index: 2;
+    }
+    
+    .card:hover .img, .img2, .img3, .img4 {
+        opacity: 1;
+        width: 340px;
+    }
+    
+    .card .img, .img2, .img3, .img4 span {
+        font-size: 24px;
+        font-style: italic;
+        font-weight: 100;
+        text-transform: uppercase;
+    }
+    
+    .card .content {
+        padding: 0 20px;
+        overflow: hidden;
+        height: 0;
+        transition: all .5s;
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    
+    .card:hover .content {
+        padding: 20px;
+        height: 330px;
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+    .card .content p {
+        margin-bottom: 0;
+    }
+    
+    .card .content .title {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    
+    .card .content .desc {
+        font-size: 14px;
+        font-weight: 100;
+        opacity: .7;
+    }
+    
+    .card .arrow {
+        padding: 5px;
+        transform: rotate(-180deg);
+        font-size: 28px;
+        transition: all .5s;
+    }
+    
+    .card:hover .arrow {
+        transform: rotate(0);
+    }
+}
+
+
+
+
+@media (max-width: 870px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        min-height: 100vh;
+        color: white;
+    }
+    
+    .card {
+        background-image: linear-gradient(#4f6f1d, #16311a);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        overflow: hidden;
+        border-radius: 16px;
+        max-width: 260px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all .5s;
+    }
+    
+    .card:hover {
+        background-image: linear-gradient(#374d14, #0d1d0f);
+    }
+    
+    .card .img {
+        background-image: url(../img/creditos/homem-de-negocios.png);
+        background-position: center;
+        background-size: cover;
+        width: 260px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: .8;
+        transition: all .5s;
+        z-index: 2;
+    }
+
+    .card .img2 {
+        background-image: url(../img/creditos/homem.png);
+        background-position: center;
+        background-size: cover;
+        width: 260px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: .8;
+        transition: all .5s;
+        z-index: 2;
+    }
+
+    .card .img3 {
+        background-image: url(../img/creditos/homem\ \(1\).png);
+        background-position: center;
+        background-size: cover;
+        width: 260px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: .8;
+        transition: all .5s;
+        z-index: 2;
+    }
+
+    .card .img4 {
+        background-image: url(../img/creditos/avatar-homem.png);
+        background-position: center;
+        background-size: cover;
+        width: 260px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: .8;
+        transition: all .5s;
+        z-index: 2;
+    }
+    
+    .card:hover .img, .img2, .img3, .img4 {
+        opacity: 1;
+        width: 340px;
+    }
+    
+    .card .img, .img2, .img3, .img4 span {
+        font-size: 24px;
+        font-style: italic;
+        font-weight: 100;
+        text-transform: uppercase;
+    }
+    
+    .card .content {
+        padding: 0 20px;
+        overflow: hidden;
+        height: 0;
+        transition: all .5s;
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    
+    .card:hover .content {
+        padding: 20px;
+        height: 260px;
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+    .card .content p {
+        margin-bottom: 0;
+    }
+    
+    .card .content .title {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    
+    .card .content .desc {
+        font-size: 14px;
+        font-weight: 100;
+        opacity: .7;
+    }
+    
+    .card .arrow {
+        padding: 5px;
+        transform: rotate(-180deg);
+        font-size: 28px;
+        transition: all .5s;
+    }
+    
+    .card:hover .arrow {
+        transform: rotate(0);
+    }
+}
+
+
+
+@media (max-width: 600px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        min-height: 100vh;
+        color: white;
+    }
+    
+    .card {
+        background-image: linear-gradient(#4f6f1d, #16311a);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        overflow: hidden;
+        border-radius: 16px;
+        max-width: 260px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all .5s;
+    }
+    
+    .card:hover {
+        background-image: linear-gradient(#374d14, #0d1d0f);
+    }
+    
+    .card .img {
+        background-image: url(../img/creditos/homem-de-negocios.png);
+        background-position: center;
+        background-size: cover;
+        width: 260px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: .8;
+        transition: all .5s;
+        z-index: 2;
+    }
+
+    .card .img2 {
+        background-image: url(../img/creditos/homem.png);
+        background-position: center;
+        background-size: cover;
+        width: 260px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: .8;
+        transition: all .5s;
+        z-index: 2;
+    }
+
+    .card .img3 {
+        background-image: url(../img/creditos/homem\ \(1\).png);
+        background-position: center;
+        background-size: cover;
+        width: 260px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: .8;
+        transition: all .5s;
+        z-index: 2;
+    }
+
+    .card .img4 {
+        background-image: url(../img/creditos/avatar-homem.png);
+        background-position: center;
+        background-size: cover;
+        width: 260px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: .8;
+        transition: all .5s;
+        z-index: 2;
+    }
+    
+    .card:hover .img, .img2, .img3, .img4 {
+        opacity: 1;
+        width: 340px;
+    }
+    
+    .card .img, .img2, .img3, .img4 span {
+        font-size: 24px;
+        font-style: italic;
+        font-weight: 100;
+        text-transform: uppercase;
+    }
+    
+    .card .content {
+        padding: 0 20px;
+        overflow: hidden;
+        height: 0;
+        transition: all .5s;
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    
+    .card:hover .content {
+        padding: 20px;
+        height: 260px;
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+    .card .content p {
+        margin-bottom: 0;
+    }
+    
+    .card .content .title {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    
+    .card .content .desc {
+        font-size: 14px;
+        font-weight: 100;
+        opacity: .7;
+    }
+    
+    .card .arrow {
+        padding: 5px;
+        transform: rotate(-180deg);
+        font-size: 28px;
+        transition: all .5s;
+    }
+    
+    .card:hover .arrow {
+        transform: rotate(0);
+    }
+}
+
+
+
+footer {
+    background-color: var(--verde);
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.titulo-rodape {
+    font-size: 28px;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.rodape {
+    display: flex;
+    color: white;
+}
+
+footer .rodape ul {
+    width: 25%;
+}
+
+.segunda-lista {
+    margin-top: 35px;
+}
+
+.terceira-lista {
+    margin-top: 35px;
+}
+
+.texto-rodape {
+    margin-right: 50px;
+}
+
+footer .rodape li {
+    margin: 10px 0;
+}
+
+footer .rodape a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 960px) {
+    footer .rodape {
+        flex-direction: column;
+    }
+
+    footer .rodape ul {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
